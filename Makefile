@@ -42,23 +42,7 @@ ${PRJ}-SM1111-ACfan-10Alimit~ : DEFINES += ${SM1111} ${AC_FAN} ${L10AMP}
 ${PRJ}-SM1111-PCfan-05Alimit~ : DEFINES += ${SM1111} ${PC_FAN} ${L05AMP}
 ${PRJ}-SM1111-PCfan-10Alimit~ : DEFINES += ${SM1111} ${PC_FAN} ${L10AMP}
 
-VARIANTS := \
-	${PRJ}-SM0000-ACfan-05Alimit~ \
-	${PRJ}-SM0000-ACfan-10Alimit~ \
-	${PRJ}-SM0000-PCfan-05Alimit~ \
-	${PRJ}-SM0000-PCfan-10Alimit~ \
-	${PRJ}-SM0001-ACfan-05Alimit~ \
-	${PRJ}-SM0001-ACfan-10Alimit~ \
-	${PRJ}-SM0001-PCfan-05Alimit~ \
-	${PRJ}-SM0001-PCfan-10Alimit~ \
-	${PRJ}-SM1110-ACfan-05Alimit~ \
-	${PRJ}-SM1110-ACfan-10Alimit~ \
-	${PRJ}-SM1110-PCfan-05Alimit~ \
-	${PRJ}-SM1110-PCfan-10Alimit~ \
-	${PRJ}-SM1111-ACfan-05Alimit~ \
-	${PRJ}-SM1111-ACfan-10Alimit~ \
-	${PRJ}-SM1111-PCfan-05Alimit~ \
-	${PRJ}-SM1111-PCfan-10Alimit~
+VARIANTS := ${PRJ}-SM0001-ACfan-10Alimit~
 
 ### testing variants
 
