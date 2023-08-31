@@ -1,0 +1,16 @@
+name: release
+run-name: mpmd-release
+on: 
+  release:
+    types: [published]
+jobs:
+  docker:
+    runs-on: ubuntu-bionic
+    steps:
+      - run: apt-get update -q -q && apt-get upgrade --yes
+      - run: apt-get install --no-install-recommends --yes make bzip2
+      - name: fetch package
+        run: wget "$URL/$REL-x86_64-linux.tar.bz2 /usr/local/pkg.tbz2"
+        env:
+          URL: https://developer.arm.com/-/media/Files/downloads/gnu-rm/10-2020q4
+          REL: gcc-arm-none-eabi-10-2020-q4-major
